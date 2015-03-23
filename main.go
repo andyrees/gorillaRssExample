@@ -13,8 +13,11 @@ func main() {
 		Title:       "andyrees.github.io blog",
 		Link:        &feeds.Link{Href: "http://andyrees.github.io/"},
 		Description: "Discussion about programming in go and transcoding",
-		Author:      &feeds.Author{"Andy Rees", "https://twitter.com/andygolang"},
-		Created:     now,
+		Author: &feeds.Author{
+			Name:  "Andy Rees",
+			Email: "https://twitter.com/andygolang",
+		},
+		Created: now,
 	}
 
 	feed.Items = []*feeds.Item{
@@ -22,8 +25,11 @@ func main() {
 			Title:       "Francesc Campoy Flores blog",
 			Link:        &feeds.Link{Href: "http://www.campoy.cat/"},
 			Description: "Developer Advocate at Google",
-			Author:      &feeds.Author{"Francesc Campoy Flores", "user@name.net"},
-			Created:     now,
+			Author: &feeds.Author{
+				Name:  "Francesc Campoy Flores",
+				Email: "user@name.net",
+			},
+			Created: now,
 		},
 		{
 			Title:       "Official Go blog",
