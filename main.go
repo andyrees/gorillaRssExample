@@ -18,14 +18,14 @@ func main() {
 	}
 
 	feed.Items = []*feeds.Item{
-		&feeds.Item{
+		{
 			Title:       "Francesc Campoy Flores blog",
 			Link:        &feeds.Link{Href: "http://www.campoy.cat/"},
 			Description: "Developer Advocate at Google",
 			Author:      &feeds.Author{"Francesc Campoy Flores", "user@name.net"},
 			Created:     now,
 		},
-		&feeds.Item{
+		{
 			Title:       "Official Go blog",
 			Link:        &feeds.Link{Href: "http://blog.golang.org/"},
 			Description: "The Go Blog",
